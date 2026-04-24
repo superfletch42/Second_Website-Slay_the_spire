@@ -1,26 +1,33 @@
 body {
     margin: 0;
     padding: 20px;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
     background-image: url("Pictures/0_Homepage/Spire_background.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-
+h1, h2, h3 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
 
 .toolbar {
     max-width: 1000px;
     margin: 0 auto 20px auto;
-    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .toolbar a {
     margin: 0 10px;
     padding: 10px 20px;
     background: #222;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
@@ -30,16 +37,37 @@ body {
     background: #444;
 }
 
+.toolbar a.active-home {
+    background: #ffffff;
+    color: #000000;
+}
+
+.toolbar a.active-ironclad {
+    background: #dd1515;
+}
+
+.toolbar a.active-silent {
+    background: #2ecc71;
+}
+
+.toolbar a.active-defect {
+    background: #3498db;
+}
+
+.toolbar a.active-watcher {
+    background: #7b2cbf;
+}
+
 
 .midbox {
     max-width: 800px;
     margin: 0 auto;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #000000b3;
     border: 5px solid #888;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px #00000080;
 }
 
 
@@ -62,7 +90,7 @@ header {
     height: 200px;
     border-radius: 10px;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
 
@@ -82,7 +110,7 @@ header {
     font-size: 22px;
     font-weight: bold;
 
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 0 10px #000000;
 }
 
 .characterbox:hover {
@@ -107,27 +135,66 @@ footer {
     max-width: 800px;
     margin: 40 auto;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #000000b3;
     border: 5px solid #888;
     padding: 30px 40px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
+/* Characters stuff below */
+
+/* Makde four seperate frames for each accent colour and to adjust pics */
+.frame-ironclad {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 100% center;
+    border: 5px solid #dd1515;
+}
+
+.frame-silent {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 100% center;
+    border: 5px solid #2ecc71;
+}
+
+.frame-defect {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 100% center;
+    border: 5px solid #3498db;
+}
+
+.frame-watcher {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 60% center;
+    border: 5px solid #7b2cbf;
+}
+
+/* Table for the Ironclad page */
 .table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #000000b3;
     border: 5px solid #888;
     border-radius: 10px;
     overflow: hidden;
-    font-family: Georgia, serif
+    font-family: Georgia, serif;
 }
 
 .table th {
-    background-color: #dd1515;
-    color: white;
+    color: #ffffff;
     padding: 12px;
     text-align: left;
     font-weight: bold;
@@ -135,7 +202,7 @@ footer {
 
 .table td {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 .table tr:last-child td {
@@ -156,6 +223,19 @@ footer {
     margin: 0 auto;
 }
 
+
+.table-ironclad th {
+    background-color: #dd1515;
+}
+
+.table-watcher th {
+    background-color: #7b2cbf; 
+}
+
+
+/* Numbered / ordered list for Silent */
+
+/* Images inside ordered list */
 ol img {
     width: 60px;
     vertical-align: middle;
@@ -163,11 +243,48 @@ ol img {
     border-radius: 5px;
 }
 
+/* Images inside unordered list */
 ul img {
     width: 60px;
     vertical-align: middle;
     margin-right: 10px;
     border-radius: 5px;
+}
+
+
+.listbox {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #000000b3;
+    border: 5px solid #888;     
+    box-shadow: 0 0 15px #00000080;
+}
+
+.listbox ol,
+.listbox ul {
+    padding-left: 20px;
+}
+
+.listbox li {
+    margin-bottom: 15px;
+}
+
+/* Ordered lsit for Silent */
+.list-silent {
+    border-color: #2ecc71;
+}
+
+.list-silent strong {
+    color: #2ecc71;
+}
+
+/* unordered list for Defect*/
+.list-defect {
+    border-color: #3498db;
+}
+
+.list-defect strong {
+    color: #3498db;
 }
 
 .character-top {
@@ -186,4 +303,32 @@ ul img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .gridbox {
+        grid-template-columns: 1fr;
+    }
+
+    .character-top {
+        grid-template-columns: 1fr;
+    }
+
+    .midbox {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gridbox {
+        grid-template-columns: 1fr;
+    }
+
+    .character-top {
+        grid-template-columns: 1fr;
+    }
+
+    .midbox {
+        padding: 20px;
+    }
 }
