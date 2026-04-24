@@ -50,7 +50,7 @@ Your objectives:
 1. Show visitors the playable characters
 2. Have a complete compendium of the cards specific to each character
 3. Give a brief description of the character and the playstyles
-4. 
+4. Make it visuelly nice to view.
 
 ---
 
@@ -91,6 +91,13 @@ index.html (hub)
 ]
 
 Your site map:
+index.html (home)
+├── 1_ironclad.html
+├── 2_silent.html
+├── 3_defect.html
+└── 4_watcher.html
+
+(All pages are connected through the navigation bar at the top)
 
 
 ### What navigation will you use?
@@ -105,6 +112,11 @@ How will users know which page they're on? [Example: "Current page link will be 
 
 Your navigation plan:
 
+Navigation appears as a horizontal bar at the top of every page.
+
+Links include: Home, Ironclad, Silent, Defect, Watcher.
+
+The current page is highlighted using a different colour in the navigation bar.
 
 ---
 
@@ -257,7 +269,7 @@ Your plan:
 - Tables: at least 1 table for a character
 - Forms: contact box on main page
 - Lists: at least one ordered and unordered list on the character pages 
-- Semantic HTML: 
+- Semantic HTML: Each page uses header for title/navigation, section for content areas, and footer for credits to improve structure and readability.
 - Images: on the homepage, inside tables, lists and background
 - Special characters: In the footer
 
@@ -297,6 +309,10 @@ I'll use grid for the main layouts of the homepage.
 - Code reuse: Create classes like .card, .button, .section-header for consistency]
 
 Your other CSS plans: 
+- Media queries for responsiveness on smaller screens
+- Hover effects on buttons and character cards
+- Border-radius and box-shadow for visual depth
+- Reusable classes for frames, tables, and lists
 
 ---
 
@@ -371,14 +387,15 @@ Backup: Use free stock photos from Unsplash with attribution]
 Your challenges:
 
 **Challenge 1:**
-- What: 
-- Why it's challenging: 
-- Your plan: 
+- What: Positioning images inside frames
+- Why it's challenging: Images were not showing the correct part when resized
+- Your plan: Use object-fit and object-position to control cropping
 
 **Challenge 2:**
-- What: 
-- Why it's challenging: 
-- Your plan: 
+- What: Making navigation highlight the current page
+- Why it's challenging: CSS alone doesn’t know the current page
+- Your plan: Use separate classes (active-home, active-ironclad, etc.)
+
 
 **Challenge 3:**
 - What: 
@@ -401,7 +418,7 @@ Your challenges:
 - Validation: W3C HTML and CSS validators]
 
 Your tools:
-- Editor: VS code
+- Editor: Visual studo Code
 - Browsers for testing: Firefox
 - Wireframes/mockups: Paint to make a simple layout
 - Version control: Github
@@ -502,24 +519,24 @@ Wikipedia
 
 Before you start coding, have you:
 
-- [ ] Clearly defined your website's purpose and audience
-- [ ] Planned all 5+ pages with specific content for each
-- [ ] Created a site map showing page relationships  
-- [ ] Designed your navigation structure
-- [ ] Chosen a color scheme with rationale
-- [ ] Selected appropriate fonts
-- [ ] Explained how you'll apply all four design principles
-- [ ] Created wireframes for at least 2 pages
-- [ ] Planned where required HTML elements will be used
-- [ ] Planned your CSS approach
+- [ Yes ] Clearly defined your website's purpose and audience
+- [ Yes ] Planned all 5+ pages with specific content for each
+- [ No ] Created a site map showing page relationships  
+- [ Yes ] Designed your navigation structure
+- [ Yes ] Chosen a color scheme with rationale
+- [ Yes  ] Selected appropriate fonts
+- [ Yes  ] Explained how you'll apply all four design principles
+- [ Yes  ] Created wireframes for at least 2 pages
+- [ Yes ] Planned where required HTML elements will be used
+- [ Yes ] Planned your CSS approach
 - [ ] **Planned where you'll use CSS Flexbox**
 - [ ] **Planned where you'll use CSS Grid**
-- [ ] Identified content needs and sources
-- [ ] Created a build schedule
-- [ ] Identified potential challenges with solutions
-- [ ] Listed all tools you'll use
-- [ ] Researched HTML and CSS evolution
-- [ ] Explained importance of web standards
+- [ Yes ] Identified content needs and sources
+- [ No ] Created a build schedule
+- [ Yes ] Identified potential challenges with solutions
+- [ Yes ] Listed all tools you'll use
+- [ Yes ] Researched HTML and CSS evolution
+- [ Yes ] Explained importance of web standards
 
 ---
 
