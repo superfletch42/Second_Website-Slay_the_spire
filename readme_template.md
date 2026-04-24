@@ -1,10 +1,10 @@
 # readme.md - Project Documentation
 
-**Your Name:** [Name]  
-**Project:** [Website title]  
-**Repository:** [Link to your GitHub repo]  
+**Your Name:** [Daniel Fletcher]  
+**Project:** [Slay the spire Fansite]  
+**Repository:** [[Link to your GitHub repo](https://github.com/superfletch42/Second_Website-Slay_the_spire)]  
 **Live Site:** [GitHub Pages URL if deployed]  
-**Completion Date:** [Date]
+**Completion Date:** [24/04/26]
 
 ---
 
@@ -24,6 +24,7 @@ Complete this template **after finishing your website**. This documents what you
 
 Your website:
 
+I made a dedicated fan website to slay the spire. On this website it features the main four characters and my own personal favourite cards each of these unique characters has.
 
 ### How do the pages work together?
 
@@ -31,6 +32,7 @@ Your website:
 
 Your explanation:
 
+On the homepage I've given some detail as to what slay the spire is and what I personally like about it. It also has a toolbar as well as four buttons that directly lead to the other 4 pages about the characters.
 
 ---
 
@@ -39,29 +41,29 @@ Your explanation:
 **Briefly describe what's on each page:**
 
 ### index.html
-Purpose: 
-Content: 
-Special features: 
+Purpose: Brief intro to the game and website content
+Content: Brief description of the game and what I like
+Special features: contact box
 
-### [Page 2 name]
-Purpose: 
-Content: 
-Special features: 
+### [1_ironclad.html]
+Purpose: Showcase Ironclad
+Content: Describes Ironclad and some of my favourite cards they have
+Special features: Table
 
-### [Page 3 name]
-Purpose: 
-Content: 
-Special features: 
+### [2_silent.html]
+Purpose: Showcase Silent
+Content: Describes Silent and some of my favourite cards they have
+Special features: Ordered List
 
-### [Page 4 name]
-Purpose: 
-Content: 
-Special features: 
+### [3_defect.html]
+Purpose: Showcase Defect
+Content: Describes Defect and some of my favourite cards they have
+Special features: Unordered list
 
-### [Page 5 name]
-Purpose: 
-Content: 
-Special features: 
+### [4_watcher.html]
+Purpose: Showcase Watcher
+Content: Describes Watcher and some of my favourite cards they have
+Special features: Table
 
 ### [Additional pages if you have more than 5]
 
@@ -81,14 +83,18 @@ Special features:
 - Images: Alt text describes each café photo for accessibility]
 
 Your implementation:
-
-
+- Semantic structure:Every page uses a header, footer, nav and section to stay organised and maintain clear structure
+- Tables: Both the Ironclad and Watcher pages use a table to display info on the cards
+= Forms: A contact form is included on the homepage. There the user can submit their name, email and comment
+- Lists: two lists are used. an ordered lsit on the SIlents page for the cards and an unordered on the Defects page. There is also an unordered list on the homepage
+- Images: They are used all over the website. They display the characters, their cards and one for the background
 **How did you structure your code?**
 
 [Example: "Each page follows same structure: header with logo, nav bar, main content divided into semantic sections, footer with credits. Code is indented consistently. Comments mark major sections."]
 
 Your approach:
 
+All pages have a consistent structure of putting the navigation bar at the top and credits in the footer. The main content is put into the centre box (midbox) across all 5 pages.
 
 ### CSS
 
@@ -103,7 +109,13 @@ Your approach:
 
 How you organized styles.css:
 
+- Global styles first (body, fonts, background image, base colours)
+- Layout styles (navigation bar, midbox container, grid layouts)
+- Component styles (tables, lists, forms, Picture frames)
+- Character-specific styles (colour-coded tables and borders for each character)
+- Reusable classes used across all pages for consistency
 
+  
 **Key CSS techniques:**
 
 [Example:
@@ -127,6 +139,12 @@ Why Flexbox worked: Perfect for one-dimensional layouts and items that need to w
 
 Your Flexbox implementation:
 
+Used Flexbox for:
+- Navigation bar (.toolbar): flex container with centered items, spacing using gap, and wrapping on smaller screens
+- Content alignment (.character-top .box): flex column used to vertically center text beside images
+
+Why Flexbox worked:
+Flexbox was useful for simple one-dimensional layouts like aligning navigation items and centering content vertically within sections.
 
 **CSS Grid - How did you use it?**
 
@@ -138,6 +156,12 @@ Why Grid worked: Best for two-dimensional layouts with rows and columns"]
 
 Your Grid implementation:
 
+Used Grid for:
+- Homepage layout (.gridbox): two-column grid displaying character links evenly
+- Character pages (.character-top): two-column grid with image on one side and text on the other
+
+Why Grid worked:
+Grid was ideal for structuring page layouts with rows and columns, making it easy to organise content into clean, balanced sections.
 
 ### Responsive Design
 
@@ -151,6 +175,13 @@ Your Grid implementation:
 
 Your responsive approach:
 
+- Desktop (>768px): Navigation is horizontal using Flexbox, and layouts use two columns (gridbox and character-top)
+- Tablet (768px and below): Layout switches to a single column using a media query, making content easier to read
+- Mobile: Navigation wraps onto multiple lines using flex-wrap, and all sections stack vertically
+
+Images scale using width: 100% and object-fit, so they resize correctly on all screen sizes. The main content is contained in a max-width container, keeping text readable.
+
+Overall, the layout adapts by switching from multi-column to single-column and allowing elements to wrap, improving usability on smaller screens I hope.
 
 ---
 
@@ -159,37 +190,50 @@ Your responsive approach:
 ### Visual Design
 
 **Color Scheme:**
-- Primary: [Hex] - [Why]
-- Secondary: [Hex] - [Why]
-- Accent: [Hex] - [Why]
+- Primary: #000000b3 - Used for main containers to create a dark, readable overlay on top of the background
+- Secondary: #888888 - Used for borders to separate content and keep a consistent structure
+- Accent: #dd1515 (Ironclad), #2ecc71 (Silent), #3498db (Defect), #7b2cbf (Watcher) - Used to match each character’s theme and highlight important elements like tables, lists, and frames
 
 **Typography:**
-- Headings: [Font] - [Why]
-- Body: [Font] - [Why]
+
+- Headings: Trebuchet MS, Arial, sans-serif - It'a Bolder than the body text
+- Body: Arial, Helvetica, sans-serif - Easy to read.
 
 **Why this design works for your topic:**
 
-
-### Design Principles Applied
+I made the entire thing a bit darker to be easier on the eyes. The colours also don't clash with the background and using a unique colour for each character adds a bit more personality.
 
 **Contrast:**
 How did you create it?
 [Example: "Café names in large, bold headings. Featured cafés have darker cards. Accent color used sparingly for CTAs."]
 
+I used dark transparent boxes with a white text. All headings are larger and easy to identify
 
 **Repetition:**
 What repeats consistently?
 [Example: "Same navigation on all pages. Café cards all use identical layout. Consistent spacing and padding throughout."]
+
+The navigation bar is the same on every page, creating consistency. Each character page follows the same layout with an image on the left and description on the right, followed by a table or list of cards.
+
+The same colours, spacing, borders, and box styles are reused across all pages, making the site feel consistent and organised.
 
 
 **Alignment:**
 How is content organized?
 [Example: "All content in centered container with max-width. Text left-aligned within sections. Navigation items evenly spaced."]
 
+All content is placed inside a centered container with a max-width, keeping everything aligned and readable. Headings are centered, while paragraphs are left-aligned for better readability.
+
+Grid is used to align images and text side by side, and Flexbox is used to align content within sections.
+
 
 **Proximity:**
 How did you group information?
 [Example: "Each café's photo, name, description, and details stay together in a card. Related brewing steps grouped in same section."]
+
+Content is grouped together in sections. Each character’s image and description are placed together at the top, while their cards are grouped below in either a table or list.
+
+Content is also placed inside boxes to visually separate different sections and make the layout easier to understand.
 
 
 ---
@@ -200,23 +244,23 @@ How did you group information?
 
 **Where did your content come from?**
 
-Text: 
-Images: 
-Data: 
-Other: 
+Text:  Written by myself based on my knowledge of Slay the Spire and what I could see in game
+Images: I got them in game and edited them in paint.net
+Data: All data was gotten from in game and my own experience using them in game
+Other: The background image is actually from the second game as I think it looked nicer than the original spire design
 
 ### Credits
 
 **Attributions for any content you didn't create:**
 
 Images:
-- [Image description]: [Source and license]
+- All images belong to Mega Crit: https://www.megacrit.com/
 
 Text/Information:
-- [What information]: [Source]
+- Based on my gameplay knowledge and in-game content from Slay the Spire
 
 Fonts:
-- [Font name]: [Source]
+- Arial, Helvetica, Trebuchet MS 
 
 Other:
 - [What]: [Source]
@@ -229,14 +273,19 @@ Other:
 
 **Describe your navigation:**
 
-Type: [Horizontal bar? Vertical menu? Hamburger on mobile?]
+Type: Horizontal navigation bar at the top of every page
 
-Links: [List all navigation links]
-
-Current page indication: [How users know where they are]
+Links: 0_homepage.html
+       1_ironclad.html
+       2_silent.html
+       3_defect.html
+       4_watcher.html
+       
+Current page indication: The title says which page they are on. As well as that the toolbar buttons change colour per page, White for home and red, green, blue, purple for the characters.
 
 **Why this navigation works:**
 
+It's pretty obvious, at least to me. A highlighted toolbar button seems like an easy way to tell.
 
 ---
 
@@ -266,6 +315,18 @@ repository-name/
 
 Your structure:
 
+Picture folder (seperated into 5 sections for each page)
+Planning folder that contains concept pics and a word doc talking about them
+0_homepage.html
+1_ironclad.html
+2_Silent.html
+3_Defect.html
+4_Watcher.html
+Maintenance_template
+Planning_template
+Readme_template
+Styles
+Project brief
 
 ### How to View Locally
 
@@ -276,8 +337,7 @@ Your structure:
 
 2. Navigate to the folder:
    ```bash
-   cd [repository-name]
-   ```
+[Second_Website-Slay_the_spire](https://github.com/superfletch42/Second_Website-Slay_the_spire)
 
 3. Open in browser:
    - Double-click `index.html`, or
@@ -299,16 +359,20 @@ Your structure:
 
 Your process:
 
+I looked at my previous project as a reference. I took and renamed most things to fit my purpose. I started with the html onthe homepage and added styles to it after.
+Once I was done with the homepage I made a template page for the character pages and went from there.
+
 
 ### Git Workflow
 
 **How did you use version control?**
 
-Commits: [How many total? How often did you commit?]
+Commits: My commits we're mostly all done as of the last week having left most of this on my own pc.
 
-Commit messages: [What was your approach?]
 
-Branches: [Did you use branches? Why or why not?]
+Commit messages: I used the titles for the commits to describe what changed and additional notes when needed
+
+Branches: No, I worked on the single branch to keep things simple
 
 ---
 
@@ -318,33 +382,39 @@ Branches: [Did you use branches? Why or why not?]
 
 ### Challenge 1
 **Problem:** 
-
+After I added the background image it did not appear
 **What you tried:** 
-
+I removed the image temporarly for a colour which appeared. I then again checked the image and it didn't appear.
+I double checked the file path and eventually tried checking on a different browser (I used firfox regularly). 
+On Chrome it would appear but not on Firefox
 **Solution:** 
-
+My extension, Dark reader was hiding the image and giving me a black background.
 **What you learned:** 
-
+Disable extensions like that next time.
+(pretty sure I had the same problem last time)
 
 ### Challenge 2
 **Problem:** 
-
+The iamges on the character pages we're cut off or not focused on the character
 **What you tried:** 
-
+I tried moving the image using object position
 **Solution:** 
-
+After some playing around with different % I found good spots for all pictures
 **What you learned:** 
-
+To seperate each picture frame box as one solution doesn't fit all typically. It also helped when I decided to give the frames their own colour for consistenacy
 
 ### Challenge 3
 **Problem:** 
+avigation didn’t clearly show which page the user was on.
 
 **What you tried:** 
+I just copy pasted my old projects version in to find out what was wrong
 
 **Solution:** 
+I had a slight typo that was messing with it
 
 **What you learned:** 
-
+Slow down and read classes/ids more
 
 ### Additional Challenges
 [Add more if needed]
@@ -375,6 +445,18 @@ Branches: [Did you use branches? Why or why not?]
 
 Your results:
 
+*HTML Validation:**
+- Tool: Visual Studio Code
+- Results: Errors and warnings were identified using Visual Studio Code and fixed during development.
+
+**CSS Validation:**
+- Tool: Visual Studio Code
+- Results:  Errors and warnings were identified using Visual Studio Code and fixed during development.
+
+### Browser Testing
+
+**Browsers tested:**
+- Firefox (Windows): All pages display correctly and function as expected at the end
 
 ### Responsive Testing
 
@@ -387,19 +469,19 @@ Your results:
 - Mobile (375x667): Single column, navigation stacks, all content readable]
 
 Your results:
-
+ I've only tested desktop (1920X1080) and everything looks like I would want it too.
 
 ### Functionality Testing
 
 **What did you test?**
 
-- [ ] All navigation links work
-- [ ] All internal links work
-- [ ] All images load with alt text
-- [ ] Form validation works (if applicable)
-- [ ] No broken links
-- [ ] Site works without internet (local testing)
-- [ ] [Other tests you performed]
+- [ Yes ] All navigation links work
+- [ Yes  ] All internal links work
+- [ Yes ] All images load with alt text
+- [ Form exists but saves no where ] Form validation works (if applicable)
+- [ I don't think so] No broken links
+- [ Only locally, It's not been live] Site works without internet (local testing)
+- [ None ] [Other tests you performed]
 
 **Issues found and fixed:**
 
@@ -415,9 +497,12 @@ Your results:
 [Example: "I got much better at using semantic HTML. At first I used divs for everything, but I learned that nav, section, article make the structure clearer. Tables were tricky but made sense once I understood thead, tbody, tr, td hierarchy. Forms are more complex than I expected with all the input types and validation."]
 
 Your HTML learning:
-
+I improved my understanding of semantic HTML and how to structure a full website properly using header, nav, section and footer. I was already pretty familiar with tables and lists from the last project, but got to put them into practice.
 
 **CSS skills:**
+
+I learned how to use Flexbox for layouts like the navigation bar and how Grid works for structuring sections of a page. I
+
 
 [Example: "Flexbox finally clicked for me when building the café cards. I learned that padding and margin make huge difference in clean layouts. Media queries seemed scary but are actually straightforward. I spent a lot of time learning about specificity when my styles weren't applying - now I understand the cascade better."]
 
@@ -426,10 +511,11 @@ Your CSS learning:
 
 **Design skills:**
 
-[Example: "I learned that less is more - my first version was too busy. Consistent spacing matters more than I thought. Choosing a color scheme that actually works together was harder than expected. Learned about color contrast for readability."]
+[Example: "I learned that less is more - my first version was too busy. Consistent spacing matters more than I thought. Choosing a color scheme that actually works together was harder than expected. Learned about colour contrast for readability."]
 
 Your design learning:
 
+My original version lacked a lot of the colour it has now on each character page. I think once added it gave a but more life to each page.
 
 **Web development workflow:**
 
@@ -437,6 +523,7 @@ Your design learning:
 
 Your workflow learning:
 
+I mostly kept this on my local pc and updated it there. I can see how Github can be useful, but I still personally prefer to keeps things local and on the cloud.
 
 ### What would you do differently next time?
 
@@ -444,6 +531,7 @@ Your workflow learning:
 
 Your thoughts:
 
+Firstly, I'd want to make a note for starting off as well as a basic template to work from. One much needed note is to disable extensions next time. I got such a headache from the background problem.
 
 ### What are you most proud of?
 
@@ -451,6 +539,9 @@ Your thoughts:
 
 Your proud moment(s):
 
+I'm pretty happy with the changing colours of the toolbar.
+
+I'm very happy with how it doesn't feel cluttered. and how perfectly the spire appears on the right side.
 
 ---
 
@@ -459,13 +550,15 @@ Your proud moment(s):
 ### If you continued working on this site, what would you add or change?
 
 **Content additions:**
+I'd add in Slay the sprie two characters.
 
+I'd also go into more detail for each character and their respective cards / builds
 
 **Technical improvements:**
-
+I think being able to fitler cards by rarity, energy cost and maybe my own build types would be amazing.
 
 **Design enhancements:**
-
+I tested it early on, and tried a gradient background for the boxes of the character colours and wasn't a major fan. One thing I would like is a simple button to press to hide all the boxes and toolbar to just view the background.
 
 ---
 
@@ -477,15 +570,18 @@ Your proud moment(s):
 
 Your reflection:
 
+Overall I'm very happy with how my project came out. The website looks clean and I've discovered nothing that doesn't work in my testing.
+
+I think my biggest take away from the project is using grid and flex box. While I didn't use much Flex box It does look to function somewhat simillary to grid so I'm sure it must have some other unique or niche usses that only it solves, or at least solves better.
 
 ---
 
-**Documentation completed:** [Date]
+**Documentation completed:** [24/04/26]
 
-**Total development time:** [Approximate hours]
+**Total development time:** [27 if I include going over previous tutorials]
 
 **Final statistics:**
-- Total pages: 
+- Total pages: 5
 - Total commits: 
 - Lines of HTML: [If you want to count]
 - Lines of CSS: [If you want to count]
