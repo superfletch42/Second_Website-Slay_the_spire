@@ -1,8 +1,8 @@
 # maintenance.md - Website Maintenance Plan
 
-**Your Name:** [Name]  
-**Website:** [Project name]  
-**Date:** [Date]
+**Your Name:** [Daniel Fletcher]  
+**Website:** [Slay the spire fansite]  
+**Date:** [24 / 04 / 26]
 
 ---
 
@@ -27,16 +27,19 @@ Complete this template after finishing your website. This demonstrates your unde
 6. **Backup site files monthly** - Keep copies of all files in case of problems.]
 
 Your maintenance tasks:
+Your maintenance tasks:
 
-1. **[Task]** - [How often] - [Why it matters]
+1. **Check all links** - Monthly - Ensures all navigation and external links still work and don’t lead to errors
 
-2. **[Task]** - [How often] - [Why it matters]
+2. **Review content accuracy** - Every few months - Makes sure character info and descriptions are still correct and relevant
 
-3. **[Task]** - [How often] - [Why it matters]
+3. **Test website in browser** - Monthly - Ensures the site still displays correctly after browser updates
 
-4. **[Task]** - [How often] - [Why it matters]
+4. **Check images** - Monthly - Makes sure all images load properly and haven’t been moved or broken
 
-5. **[Task]** - [How often] - [Why it matters]
+5. **Backup project files** - Monthly - Prevents data loss if files are deleted or corrupted
+
+6. **Update styling if needed** - Occasionally - Improve design or fix layout issues found over time
 
 6. **[Additional tasks]**
 
@@ -60,6 +63,13 @@ Your maintenance tasks:
 
 Your process for adding content:
 
+1. Open the relevant HTML page in Visual Studio Code  
+2. Copy an existing section (table row, list item, or character block)  
+3. Update the text, image source, and details  
+4. Add the new image to the correct images folder  
+5. Check layout and styling still work correctly  
+6. Save and test the page in browser  
+7. Commit updated version to GitHub
 
 **Updating existing content:**
 
@@ -72,6 +82,13 @@ Your process for adding content:
 6. Commit and push changes"]
 
 Your process for updating content:
+ 
+1. Open the correct HTML file  
+2. Use Find to locate the content  
+3. Edit the text or replace the image  
+4. Save changes  
+5. Refresh the page in browser to check it works  
+6. Commit updated version to GitHub  
 
 
 **Removing outdated content:**
@@ -86,6 +103,12 @@ Your process for updating content:
 
 Your process for removing content:
 
+1. Open the relevant HTML file  
+2. Delete the section (table row, list item, or image)  
+3. Remove any related images from the folder if not needed  
+4. Check layout still looks correct  
+5. Make sure no broken links or gaps remain  
+6. Save, test, and commit changes  
 
 ---
 
@@ -106,6 +129,14 @@ Your process for removing content:
 
 Your troubleshooting approach:
 
+1. Check the page in the browser and see what looks broken  
+2. Look for errors in Visual studio code (red underlines or warnings)  
+3. Check file paths for images, CSS, or links  
+4. Review recent changes to see what caused the issue  
+5. Test in the browser again after fixing  
+6. Compare with another working page if needed  
+
+
 
 **If you wanted to change the design:**
 
@@ -117,6 +148,13 @@ Your troubleshooting approach:
 5. Commit change"]
 
 How you'd approach design changes:
+
+1. Open styles.css  
+2. Update colours, spacing, or layout values  
+3. Save and refresh the browser to see changes  
+4. Check all pages to make sure nothing breaks  
+5. Adjust if needed until it looks consistent  
+6. Commit changes  
 
 
 **If you wanted to add a new page:**
@@ -135,6 +173,14 @@ How you'd approach design changes:
 
 Your process for new pages:
 
+1. Create a new HTML file  
+2. Copy structure from an existing page  
+3. Update the title and headings  
+4. Add new content (text, images, etc.)  
+5. Add the page to the navigation bar on all pages  
+6. Test links and layout in browser  
+7. Make sure it works on smaller screens  
+8. Save and commit changes  
 
 ---
 
@@ -149,6 +195,8 @@ Your process for new pages:
 
 How you'd improve performance if needed:
 
+I would reduce image file sizes to make them load faster and avoid using unnecessarily large images. I would also remove any unused code in the CSS and HTML to keep the site efficient. Testing the site in the browser would help check if pages are loading slowly and identify any issues.
+
 
 **Accessibility:**
 - [ ] Are all images still using alt text?
@@ -158,6 +206,7 @@ How you'd improve performance if needed:
 
 How you'd improve accessibility if needed:
 
+I would make sure all images have clear alt text so they can be understood if they don’t load or for screen readers. I would use clear and descriptive link text so users know where they are going. I would also check that text contrasts well with the background so it is easy to read.
 
 **Standards compliance:**
 - [ ] Does HTML still validate?
@@ -166,6 +215,7 @@ How you'd improve accessibility if needed:
 
 How you'd maintain standards:
 
+I would use Visual Studio Code to check for errors and fix any issues that appear. I would also regularly test the website in a browser to make sure everything still works correctly. Keeping the code clean and properly structured helps ensure it follows web standards.
 
 ---
 
@@ -185,6 +235,12 @@ How you'd maintain standards:
 
 Your essential tools:
 
+- text editor: Visual Code Studio
+- Github for version control
+- Visual Code Studio extension to launch website live temporary to test
+- Used Firefox to check
+- Paint and Paint.net for image editting when needed
+
 
 **Helpful resources:**
 
@@ -196,6 +252,9 @@ Your essential tools:
 
 Your resources:
 
+-  **https://www.khanacademy.org/computing/computer-programming** 
+-  **https://quickref.me/html** 
+-  **https://www.theodinproject.com/paths/foundations/courses/foundations**
 
 **Skills needed:**
 
@@ -209,7 +268,10 @@ Your resources:
 
 Skills for maintenance:
 
-
+- Basic HTML editing
+- CSS modification
+- Using Git (commit, push)
+- image optimzain basics and tools
 ---
 
 ## 6. Common Problems and Solutions
@@ -225,29 +287,33 @@ Skills for maintenance:
 
 Your documented problems:
 
-**Problem:** 
+Problem 1:
 
-**Possible causes:** 
+Problem: Images not displaying on the page  
 
-**Solution:** 
+Possible causes: Incorrect file path, wrong folder name, or file name mismatch  
 
-
-**Problem 2:**
-
-**Problem:** 
-
-**Possible causes:** 
-
-**Solution:** 
+Solution: It was an extension hiding them
 
 
-**Problem 3:**
+Problem 2:
 
-**Problem:** 
+Problem: Navigation not highlighting the current page  
 
-**Possible causes:** 
+Possible causes: No styling applied to indicate active page  
 
-**Solution:** 
+Solution: Add specific classes (e.g. active-home, active-ironclad) and style them in CSS
+
+
+Problem 3:
+
+Problem: Images inside frames not positioned correctly  
+
+Possible causes: Default image positioning or incorrect sizing  
+
+Solution: Use object-fit: cover; and object-position to control how the image fits and what part is visible
+
+
 
 
 [Add more problems you anticipate or encountered]
@@ -276,6 +342,11 @@ If something breaks:
 
 Your Git workflow for maintenance:
 
+I mainly worked locally on the project using Visual Studio Code. Changes were made and tested directly in the browser before saving.
+
+For important updates, I uploaded versions to GitHub as a backup. This allowed me to keep a copy of the project and restore files if something went wrong.
+
+If an issue occurred, I would use a previous saved version of the project to restore the working state and then reapply changes carefully. 
 
 **What makes a good commit message?**
 
@@ -284,7 +355,7 @@ Bad: 'Updates', 'Fixed stuff', 'Changes'
 
 Good commit messages are specific and explain WHAT changed."]
 
-Your commit message approach:
+Your commit message approach: I think a brief self explanitory title with more indept notes make a good commit message
 
 
 ---
@@ -302,6 +373,9 @@ Your commit message approach:
 - Add events calendar for coffee festivals]
 
 Your ideas:
+- Add Slay the spire two character
+- Add more cards and go into detail on builds and synergies
+
 
 
 **Feature additions:**
@@ -314,7 +388,8 @@ Your ideas:
 - Add dark mode toggle]
 
 Your ideas:
-
+- Add all cards for each character so they can be searched by colour / Energy cost / Strategy
+- functional contact box
 
 **Technical improvements:**
 
@@ -327,6 +402,8 @@ Your ideas:
 
 Your ideas:
 
+- Drop down menus for cards to go into more detial
+- Gifs of the charactes moving in game would be nice
 
 ---
 
@@ -335,27 +412,32 @@ Your ideas:
 ### Create a maintenance calendar
 
 **Weekly tasks:**
-- [Task]
-- [Task]
+- Check that all pages load correctly in the browser
+- Review any contact form submissions (if used)
+- If Slay the two spire characters are added, I'd have to check the games current build version and update info 
 
 **Monthly tasks:**
-- [Task]
-- [Task]
-- [Task]
+- Check all links and navigation still work
+- Test the site in the browser to ensure layout is still correct
+- Check images are loading properly
+
 
 **Quarterly tasks:**
-- [Task]
-- [Task]
+- Review and update content if needed
+- Improve styling or fix any layout issues
+
 
 **Yearly tasks:**
-- [Task]
-- [Task]
+- Review entire website for improvements
+- Update design or content if needed
+
 
 **After major browser updates:**
-- [Task]
+- Test the website in the browser to ensure everything still works correctly
 
 **After adding content:**
-- [Task]
+- Check layout, images, and links work correctly
+- Test the page in the browser and fix any issues
 
 ---
 
@@ -377,6 +459,12 @@ Your ideas:
 
 Your research:
 
+- Automatic updates handled by the platform
+- Built-in backups and security features
+- No coding knowledge required
+- Easy to edit content using visual editors
+- Mobile responsiveness is usually built-in
+- Hosting is included
 
 **Disadvantages of website builders:**
 
@@ -390,12 +478,20 @@ Your research:
 
 Your research:
 
+- Monthly or yearly cost
+- Less control over design and layout
+- Limited customization compared to coding
+- Can include branding or restrictions
+- Sites can be slower due to extra features
+- Harder to move to another platform later
 
 **When would a website builder be better than hand-coding?**
 
 [Example: "For someone who needs to update content frequently but doesn't want to learn HTML/CSS, a builder makes sense. For business owners who need simple sites quickly. For sites that need backend features like e-commerce or user accounts."]
 
 Your analysis:
+
+Website builders are better for users who don’t know how to code and need a website quickly. They are useful for small businesses, personal sites, or projects that need frequent content updates without technical knowledge.
 
 
 **When is hand-coding better?**
@@ -404,30 +500,33 @@ Your analysis:
 
 Your analysis:
 
+Hand-coding is better when you want full control over design and functionality. It is also better for learning web development, creating custom layouts, and building lightweight websites without unnecessary features.
+
+Sometimes a personal touch makes it better than templates and standard designs
 
 **Sources for this research:**
-- 
-- 
+- https://www.wix.com/
+- https://en.wikipedia.org/wiki/Web_hosting_service
 
 ---
 
 ## Maintenance Checklist
 
-- [ ] Listed 5+ regular maintenance tasks with frequency
-- [ ] Explained process for adding new content
-- [ ] Explained process for updating existing content  
-- [ ] Explained process for removing content
-- [ ] Described troubleshooting approach
-- [ ] Explained how to make design changes
-- [ ] Explained how to add new pages
-- [ ] Identified performance monitoring needs
-- [ ] Identified accessibility monitoring needs
-- [ ] Listed essential tools for maintenance
-- [ ] Documented common problems and solutions
-- [ ] Described Git workflow for updates
-- [ ] Proposed future enhancements
-- [ ] Created maintenance schedule
-- [ ] Researched website builders vs hand-coding
+- [ Yes ] Listed 5+ regular maintenance tasks with frequency
+- [ Yes ] Explained process for adding new content
+- [ Yes ] Explained process for updating existing content  
+- [ Yes ] Explained process for removing content
+- [ Yes ] Described troubleshooting approach
+- [ Yes ] Explained how to make design changes
+- [ Yes ] Explained how to add new pages
+- [ Yes ] Identified performance monitoring needs
+- [ Yes ] Identified accessibility monitoring needs
+- [ Yes ] Listed essential tools for maintenance
+- [ Yes ] Documented common problems and solutions
+- [ Yes ] Described Git workflow for updates
+- [ Yes ] Proposed future enhancements
+- [ Yes ] Created maintenance schedule
+- [ Yes ] Researched website builders vs hand-coding
 
 ---
 
@@ -439,9 +538,8 @@ Your analysis:
 
 Your reflection:
 
+Website maintenance seems to be a constant task with no set end date as information changes, browsers evolve and even newer and better versions of HTML and CSS release.
+
+All of those possibilites could lead to outdated info, images breaking or sizing differently or just a total lack of website functionality.
 
 ---
-
-**Maintenance plan completed:** [Date]
-
-**Next scheduled review:** [When would you next check this maintenance plan?]
