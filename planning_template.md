@@ -124,13 +124,15 @@ Your navigation plan:
 Why these colors work: They evoke coffee while staying professional and readable. The warm tones create a cozy feeling appropriate for café culture.]
 
 Your colors:
-- Primary: [Color name and hex] - 
-- Secondary: [Color name and hex] - 
-- Accent: [Color name and hex] - 
-- Background: [Color name and hex] - 
-- Text: [Color name and hex] - 
+- Primary: Black - rgba(0,0,0,0.7)
+- Secondary: Grey / Silver — #888888
+- Accent: Ironclad: red — #dd1515 | Silent: green — #2ecc71 | Defect blue: — #3498db | Watcher: purple — #7b2cbf
+- Background: No colour, Custom image of Slay the spire 2 background (Even though its about the first game, this looks way better!)
+- Text: White - #ffffff
 
 Why these colors work for your topic:
+I think for the primary and secondary they look good against the custome background.
+For the accent colours they all represent the colour associated with these characters and their card boarders.
 
 
 ### Typography
@@ -145,12 +147,13 @@ Why these colors work for your topic:
 Why these fonts: Playfair gives sophistication for café names and headings. Open Sans is highly readable for reviews and information.]
 
 Your fonts:
-- Headings: 
-- Body text: 
-- Special text (if needed): 
+- Headings: Trebuchet MS Arial, sans-serif
+- Body text: Ariel Helventica, Sans-serif
+- Special text (if needed): None
 
 Why these fonts work:
 
+They look nice
 
 ---
 
@@ -164,7 +167,8 @@ How will you create visual hierarchy and make important elements stand out?
 [Example: "Featured cafés will have larger cards with photos. Section headings will be larger and darker than body text. Call-to-action buttons will use the accent color."]
 
 Your approach:
-
+I'm using a darker background with some transparency. The text is in white and stands out easily against it. All the headings are largers.
+All the character pages usee their own unique accent colours to highlight the tables and lists as well as a being used for picture frames.
 
 **Repetition:**
 What elements will repeat across pages to create consistency?
@@ -173,6 +177,9 @@ What elements will repeat across pages to create consistency?
 
 Your approach:
 
+Every page has a navigation bar.
+All four of the character pages have a very similar layout of having the character at the top left and some brief text on them.
+under that section is either a table / list of some of the best cards these characters have.
 
 **Alignment:**
 How will you organize content on the page?
@@ -181,6 +188,7 @@ How will you organize content on the page?
 
 Your approach:
 
+Everything is centered withing the midbox. For headings the text is in the middle and for paragrapghs it is alighned left.
 
 **Proximity:**
 How will you group related information?
@@ -188,6 +196,10 @@ How will you group related information?
 [Example: "Each café's info (photo, name, address, hours, rating) will be grouped in a card. Related brewing tips will be in same section with clear spacing between different topics."]
 
 Your approach:
+
+All the content are in boxes. All character pages keep the images and description together at the top.
+The card tables and lists are placed in their own sections.
+00000000000000<img width="774" height="613" alt="Character pages" src="https://github.com/user-attachments/assets/c0b11d04-18e3-4265-a563-0e5ff5af7f6f" />
 
 
 ---
@@ -223,22 +235,7 @@ Desktop Layout (index.html):
 ]
 
 Your wireframes:
-
-**Page 1 (Desktop):**
-[Insert image or draw here]
-
-
-**Page 1 (Mobile):**
-[How does it adapt for mobile?]
-
-
-**Page 2 (Desktop):**
-[Insert image or draw here]
-
-
-**Page 2 (Mobile):**
-[How does it adapt for mobile?]
-
+Pictures are in the planning folder
 
 ---
 
@@ -257,12 +254,12 @@ Don't just list elements - explain WHERE and WHY on your site:
 - Semantic sections: Each page will have header (site title + nav), main (content), sections (topic areas), footer (copyright + social links)]
 
 Your plan:
-- Tables: 
-- Forms: 
-- Lists: 
+- Tables: at least 1 table for a character
+- Forms: contact box on main page
+- Lists: at least one ordered and unordered list on the character pages 
 - Semantic HTML: 
-- Images: 
-- Special characters: 
+- Images: on the homepage, inside tables, lists and background
+- Special characters: In the footer
 
 ### CSS Approach
 
@@ -279,6 +276,7 @@ You must use both CSS Flexbox and CSS Grid somewhere in your site. Plan where an
 
 Your Flexbox plan:
 
+It is used in the toolbar
 
 **CSS Grid - Where will you use it?**
 
@@ -288,7 +286,7 @@ Your Flexbox plan:
 - Gallery section: 3-column grid of café photos that adapts to 2 then 1 column"]
 
 Your Grid plan:
-
+I'll use grid for the main layouts of the homepage.
 
 **Other CSS techniques:**
 
@@ -315,9 +313,9 @@ Your other CSS plans:
 - Other: Maybe embedded Google Maps if I can figure that out]
 
 Your content needs:
-- Text: 
-- Images: 
-- Data: 
+- Text: Write 4 short character briefs explaning them
+- Images: four character images as well as 5 images of my own personal favourite cards
+- Data: Relevent info on the cards and characters
 - Other: 
 
 ### Content Sources
@@ -331,11 +329,12 @@ Your content needs:
 - All sources will be credited in footer or about page]
 
 Your sources:
-
+I'll get pictures from the game and edit them in paint.net to remove their background and make them transparent if needed.
 
 **If using others' content (images, text, etc.):**
 How will you credit them?
 
+I will leave credit in the footer to the game makers.
 
 ---
 
@@ -353,6 +352,8 @@ Week 4: Refine styling, test everything, complete documentation]
 
 Your plan:
 
+No set timeline.
+But I will start with the homepage and work on each individual character page in their in game unlock order (Ironclad, Silent, Defect, Watcher)
 
 ### Anticipated Challenges
 
@@ -400,11 +401,11 @@ Your challenges:
 - Validation: W3C HTML and CSS validators]
 
 Your tools:
-- Editor: 
-- Browsers for testing: 
-- Wireframes/mockups: 
-- Version control: 
-- Other tools: 
+- Editor: VS code
+- Browsers for testing: Firefox
+- Wireframes/mockups: Paint to make a simple layout
+- Version control: Github
+- Other tools: Paint.net to edit pictures
 
 ### Code Generators
 
@@ -421,6 +422,12 @@ If no:
 - Why not? 
 
 Your answer:
+
+I'll mostly just reference my previous project and adjust it.
+last time I found great references and tutorials here:
+https://www.khanacademy.org/computing/computer-programming
+https://quickref.me/html
+https://www.theodinproject.com/paths/foundations/courses/foundations
 
 
 ---
@@ -439,10 +446,22 @@ What versions of HTML have existed? What were major changes? How have HTML5 sema
 
 Your explanation:
 
+HTML stands for Hyper Text Markup Language.
 
-Sources:
-- 
-- 
+It's a markup language that lets web browsers interprety and compose text, images and more.
+
+It was made in 1993.
+
+HTML has seen many changes and evolutions since it's early days. Early HTML was more focused on structure and basic text having no real integration with media like we do now. Modern HTML allows us to embed videos, audio and similar things. This has all come from HTML 5.
+
+The previous version of HTML, HTML4 introduced tables, Styles and scripts. These would allow devs to better organise and improve presentation of their websites.
+
+Modern HTML that we have today introduces more semantic elements like <nav>, <section> and <footer> With these it makes looking at the code for a website much easier to traverse and understand what does what and where.
+
+Sources: 
+W3Schools
+Wikipedia
+
 
 ### CSS Evolution
 
@@ -456,8 +475,8 @@ Your explanation:
 
 
 Sources:
-- 
-- 
+W3Schools
+Wikipedia
 
 ### Why Standards Matter
 
@@ -467,7 +486,16 @@ Sources:
 
 Your explanation:
 
+CSS stands for Cascading Style sheets. It was first introduced in 1996.
 
+These sheets where made to help manage code more easily by allowing developers to use classes and id's in their html files instead of having to repeat the same design choices into the html code.
+
+Early versions of CSS focused mainly on basic styling. This would be coloursm fonts and spacing. Mordern CSS has more advanced features like Flexbox and Grid to better organise and present text, images and more.
+
+
+Sources:
+W3Schools
+Wikipedia
 ---
 
 ## Planning Checklist
